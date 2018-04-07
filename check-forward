@@ -1,0 +1,4 @@
+grep ^host /etc/dhcp/dhcpd.conf | awk '{print $2}' | while read ip;do host $ip ;done | grep NXDOMAIN
+
+
+
